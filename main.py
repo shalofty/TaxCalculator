@@ -203,11 +203,11 @@ else:
 
 # STATE withholding vs total amount owed
 if statetaxWithheld > totalStateTax:
-    print("Congratulations! You'll be receiving a refund from your Federal taxes this year.")
-    fedRefund = fedtaxWithheld - totalFedTax
-    fedRefund = abs(fedRefund)
-    fedRefund = str(fedRefund)
-    print("Your refund amount is " + fedRefund)
+    print("Congratulations! You'll be receiving a refund from your State taxes this year.")
+    stateRefund = statetaxWithheld - totalStateTax
+    stateRefund = abs(stateRefund)
+    stateRefund = str(stateRefund)
+    print("Your refund amount is " + stateRefund)
 elif statetaxWithheld < totalStateTax:
     print("Congratulations, we're finished your State tax calculations.")
     statetaxOwed = totalStateTax - statetaxWithheld
@@ -217,6 +217,4 @@ else:
     print("Error in statetaxWithheld vs totalstateTax if statements")
 
 # Social Security tax calculations
-# READ ME -- DO NOT PROCEED WITHOUT READING
-# It should be noted that social security tax is paid as a percentage of NET EARNINGS
-# There is an upper limit associated with ss tax, income over 147000 is not taxed
+# Medicare tax calculations
