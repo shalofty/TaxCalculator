@@ -7,6 +7,7 @@ from state_dicts import *
 from state_utils import *
 
 # User input for annual income
+print("Please have your W2 information ready.")
 income = input("Please enter your annual income for the fiscal year 2022: ")
 income = float(income)
 
@@ -20,6 +21,13 @@ filing_status = filing_status.upper()
 
 # Declaring totalFedTax variable
 totalFedTax = 0
+
+# Declaring withheld tax variables
+fedtaxWithheld = input("Please enter the amount of Federal income tax withheld, in Box 2 of your W2: ")
+fedtaxWithheld = float(fedtaxWithheld)
+
+statetaxWithheld = input("Please enter the amount of State income tax withheld, in Box 17 of your W2: ")
+statetaxWithheld = float(statetaxWithheld)
 
 # If statement comparing bracket dictionaries minimum and maximum values to user income
 # totalFedTax is tax owed
@@ -171,13 +179,39 @@ if residence == "ALABAMA":
         print(totalStateTax)
     else:
         print("Error in state ALABAMA/SINGLE if statement")
-# Alaska no tax
+# ALASKA no tax
 elif residence == "ALASKA":
     totalStateTax = 0
     print(totalStateTax)
 else:
     print("Other states follow same structure")
 
-# Declaring totalTax variable, Federal and State tax combined
-totalTax = totalFedTax + totalStateTax
-print(totalTax)
+# FEDERAL withholding vs total amount owed
+if fedtaxWithheld > totalFedTax:
+    print("Congratulations! You'll be receiving a refund from your Federal taxes this year.")
+    fedRefund = fedtaxWithheld - totalFedTax
+    fedRefund = abs(fedRefund)
+    fedRefund = str(fedRefund)
+    print("Your refund amount is " + fedRefund)
+elif fedtaxWithheld < totalFedTax:
+    print("Congratulations, we're finished your Federal tax calculations.")
+    fedtaxOwed = totalFedTax - fedtaxWithheld
+    fedtaxOwed = str(fedtaxOwed)
+    print("This year you owe " + fedtaxOwed + " in Federal taxes.")
+else:
+    print("Error in fedtaxWithheld vs totalFedTax if statements")
+
+# STATE withholding vs total amount owed
+if statetaxWithheld > totalStateTax:
+    print("Congratulations! You'll be receiving a refund from your Federal taxes this year.")
+    fedRefund = fedtaxWithheld - totalFedTax
+    fedRefund = abs(fedRefund)
+    fedRefund = str(fedRefund)
+    print("Your refund amount is " + fedRefund)
+elif statetaxWithheld < totalStateTax:
+    print("Congratulations, we're finished your State tax calculations.")
+    statetaxOwed = totalStateTax - statetaxWithheld
+    statetaxOwed = str(statetaxOwed)
+    print("This year you owe " + statetaxOwed + " in State taxes.")
+else:
+    print("Error in statetaxWithheld vs totalstateTax if statements")
