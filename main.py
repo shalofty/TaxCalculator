@@ -79,7 +79,7 @@ if filing_status == "SINGLE":
         print(totalFedTax)
 
     else:
-        print("Error in fed_single.py if statement")
+        print("Error in fed tax if statement")
 
 elif filing_status == "MARRIED FILING JOINTLY":
     if fed_dict1mfj["min"] < income < fed_dict1mfj["max"]:
@@ -161,7 +161,7 @@ if residence == "ALABAMA":
         totalStateTax = maxTax1 + maxTax2 + maxTax3
         print(totalStateTax)
     else:
-        print("Error in state_single.py, ALABAMA if statement")
+        print("Error in state ALABAMA/SINGLE if statement")
 # Alaska no tax
 elif residence == "ALASKA":
     totalStateTax = 0
