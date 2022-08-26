@@ -84,7 +84,7 @@ if filing_status == "SINGLE":
         print(totalFedTax)
 
     else:
-        print("Error in fed tax if statement")
+        print("Error in fed single if statement")
 
 # MARRIED FILING JOINTLY SECTION
 elif filing_status == "MARRIED FILING JOINTLY":
@@ -145,7 +145,7 @@ elif filing_status == "MARRIED FILING JOINTLY":
         print(totalFedTax)
 
     else:
-        print("Error in fed_mfj.py if statement")
+        print("Error in fed_mfj if statement")
 
 # Declaring totalStateTax variable
 totalStateTax = 0
