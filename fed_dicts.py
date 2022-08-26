@@ -7,6 +7,10 @@ ss_dict = {
     "max": 147000
 }
 
+medicare_dict = {
+    "min": 0
+}
+
 # Bracket Dictionaries
 # Federal Single
 fed_dict1s = {
