@@ -215,3 +215,8 @@ elif statetaxWithheld < totalStateTax:
     print("This year you owe " + statetaxOwed + " in State taxes.")
 else:
     print("Error in statetaxWithheld vs totalstateTax if statements")
+
+# Social Security tax calculations
+# READ ME -- DO NOT PROCEED WITHOUT READING
+# It should be noted that social security tax is paid as a percentage of NET EARNINGS
+# There is an upper limit associated with ss tax, income over 147000 is not taxed

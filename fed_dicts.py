@@ -1,5 +1,12 @@
 # Dictionary File of FEDERAL Tax Brackets and corresponding Tax Rates
 
+# Social Security Tax Dictionary
+
+ss_dict = {
+    "min": 0,
+    "max": 147000
+}
+
 # Bracket Dictionaries
 # Federal Single
 fed_dict1s = {

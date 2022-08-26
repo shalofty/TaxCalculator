@@ -18,3 +18,14 @@ fbracket4 = Federal(4, .24)
 fbracket5 = Federal(5, .32)
 fbracket6 = Federal(6, .35)
 fbracket7 = Federal(7, .37)
+
+
+class Withholdings:
+
+    def __init__ (self, taxrate):
+        self.taxrate = float(taxrate)
+
+
+# WITHHOLDINGS
+social_security = Withholdings(0.062)
+medicare = Withholdings(0.0145)
