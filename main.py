@@ -29,6 +29,14 @@ fedtaxWithheld = float(fedtaxWithheld)
 statetaxWithheld = input("Please enter the amount of State income tax withheld, in Box 17 of your W2: ")
 statetaxWithheld = float(statetaxWithheld)
 
+# Declaring Social Security withholdings variable
+sstaxWithheld = input("Please enter the amount of Social Security tax withheld, in Box 4 of your W2: ")
+sstaxWithheld = float(sstaxWithheld)
+
+# Declaring Medicare withholdings variable
+medtaxWithheld = input("Please enter the amount of Medicare tax withheld, in Box 6 of your W2: ")
+medtaxWithheld = float(medtaxWithheld)
+
 # If statement comparing bracket dictionaries minimum and maximum values to user income
 # totalFedTax is tax owed
 
@@ -216,5 +224,32 @@ elif statetaxWithheld < totalStateTax:
 else:
     print("Error in statetaxWithheld vs totalstateTax if statements")
 
+
 # Social Security tax calculations
+
+# Declare sstaxOwed variable
+sstaxOwed = 0
+
+if income < ss_dict["max"]:
+    sstaxOwed = social_security.taxrate * income
+elif income > ss_dict["max"]:
+    sstaxOwed = social_security.taxrate * ss_dict["max"]
+else:
+    print("Error in Social Security calculations if statement pt. 2")
+
+if sstaxOwed > sstaxWithheld:
+    sstaxOwed = sstaxOwed - sstaxWithheld
+    sstaxOwed = str(sstaxOwed)
+    print("You didn't pay enough on Social Security tax this year. You'll need to pay " + sstaxOwed)
+elif sstaxOwed < sstaxWithheld:
+    sstaxOwed = sstaxWithheld - sstaxOwed
+    sstaxOwed = str(sstaxOwed)
+    print("You overpaid on your Social Security tax this year. You'll receive " + sstaxOwed + " as a refund.")
+else:
+    print("Error in Social Security calculations if statement pt. 2")
+
+print("Social Security Tax: " + sstaxOwed)
+
 # Medicare tax calculations
+
+
