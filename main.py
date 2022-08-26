@@ -6,21 +6,26 @@ from fed_utils import *
 from state_dicts import *
 from state_utils import *
 
+# User input for annual income
 income = input("Please enter your annual income for the fiscal year 2022: ")
 income = float(income)
 
+# User input for state residence
 residence = input("Please enter which state you will be filing your taxes through: ")
 residence = residence.upper()
 
+# User input for filing status
 filing_status = input("Please enter your filing status for the fiscal year 2022: ")
 filing_status = filing_status.upper()
 
+# Declaring totalFedTax variable
 totalFedTax = 0
 
 # If statement comparing bracket dictionaries minimum and maximum values to user income
 # totalFedTax is tax owed
 
-# Federal Tax CalculationS
+# Federal Tax Calculations
+# SINGLE FILERS SECTION
 if filing_status == "SINGLE":
     if fed_dict1s["min"] < income < fed_dict1s["max"]:
         maxTax1 = fbracket1.fedrate() * income
@@ -81,6 +86,7 @@ if filing_status == "SINGLE":
     else:
         print("Error in fed tax if statement")
 
+# MARRIED FILING JOINTLY SECTION
 elif filing_status == "MARRIED FILING JOINTLY":
     if fed_dict1mfj["min"] < income < fed_dict1mfj["max"]:
         maxTax1 = fbracket1.fedrate() * income
@@ -141,9 +147,12 @@ elif filing_status == "MARRIED FILING JOINTLY":
     else:
         print("Error in fed_mfj.py if statement")
 
+# Declaring totalStateTax variable
 totalStateTax = 0
 
-# Alabama bracketed tax
+# ALABAMA bracketed tax
+# So far if statements run on Alabama Single Bracket Taxrate info from state_utils
+# Need to incorporate varying filing_status complexity
 if residence == "ALABAMA":
     if state_dict1sAL["min"] < income < state_dict1sAL["max"]:
         maxTax1 = sbracket1_al.taxrate * income
@@ -169,5 +178,6 @@ elif residence == "ALASKA":
 else:
     print("Other states follow same structure")
 
+# Declaring totalTax variable, Federal and State tax combined
 totalTax = totalFedTax + totalStateTax
 print(totalTax)
