@@ -11,3 +11,14 @@ There are three variations in the way states tax citizens:
 
 The current working model takes into account the bracketed tax system for the state of Alabama.
 Because of the size of the state tax system I haven't finished committing tax data for the other states.
+
+The plan is to have a fully functioning tax calculator that takes into account all areas of tax and tax savings
+
+Future features:
+
+Standard Deductions
+Personal Exemptions
+Child Tax Credit
+Capital Gains Tax Rates and Brackets (Long-term Capital Gains)
+
+Everything is based on information from taxfoundation.org
