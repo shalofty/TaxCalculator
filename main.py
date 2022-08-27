@@ -248,8 +248,4 @@ elif sstaxOwed < sstaxWithheld:
 else:
     print("Error in Social Security calculations if statement pt. 2")
 
-print("Social Security Tax: " + sstaxOwed)
-
 # Medicare tax calculations
-
-
