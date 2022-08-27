@@ -275,3 +275,16 @@ else:
     print("Error in Social Security calculations if statement pt. 2")
 
 # Medicare tax calculations
+medtaxOwed = income * medicare.taxrate
+if medtaxOwed > medtaxWithheld:
+    medtaxBalance = medtaxOwed - medtaxWithheld
+    # Round 2 decimal places for output to user
+    medtaxBalance = str(round(medtaxBalance, 2))
+    print("You didn't pay enough on Medicare tax this year. You'll need to pay " + medtaxBalance)
+elif medtaxOwed < medtaxWithheld:
+    medtaxRefund = medtaxWithheld - medtaxOwed
+    # Round 2 decimal places for output to user
+    medtaxRefund = str(round(medtaxRefund, 2))
+    print("You overpaid on Medicare tax this year. You'll receive " + medtaxRefund + "as a refund.")
+else:
+    print("Error in medtax if statement")
