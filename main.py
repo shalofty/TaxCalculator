@@ -1,6 +1,10 @@
 # Federal imports
 from fed_dicts import *
 from fed_utils import *
+import json
+
+with open("state_tax_data.json") as state_tax_data:
+    data = json.load(state_tax_data)
 
 # State imports
 from state_dicts import *
@@ -163,36 +167,47 @@ elif filing_status == "MARRIED FILING JOINTLY":
     else:
         print("Error in fed_mfj if statement")
 
+
+# First iteration through json to see if stateName matches state_input from user
+i = 0
+for states in data['listStates'][i]['stateName']:
+    if residence == data['listStates'][i]['stateName']:
+        print("1st for loop works")
+        i = i
+        print(data['listStates'][i]['stateName'])
+        break
+    else:
+        i += 1
+
+# Second iteration through json to see if status matched filing_status input
+j = 0
+for status in data['listStates'][i]['filingStatus'][j]['status']:
+    if filing_status == data['listStates'][i]['filingStatus'][j]['status']:
+        print("2nd for loop works")
+        j = j
+        print(data['listStates'][i]['filingStatus'][j]['status'])
+        break
+    else:
+        print("2nd loop failed")
+        j += 1
+
+# Beginning of third iteration
+k = 0
+# Loop needs work, just transferred from test file
+for incomes in data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]:
+    if data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['income'] < income < data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['income']:
+        k = k
+        print("3rd loop works")
+        print(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['income'])
+        taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
+        print(taxRate)
+        break
+    else:
+        print("3rd loop failed")
+        k += 1
+
 # Declaring totalStateTax variable
 totalStateTax = 0
-
-# ALABAMA bracketed tax
-# So far if statements run on Alabama Single Bracket Taxrate info from state_utils
-# Need to incorporate varying filing_status complexity
-if residence == "ALABAMA":
-    if state_dict1sAL["min"] < income < state_dict1sAL["max"]:
-        maxTax1 = sbracket1_al.taxrate * income
-        totalStateTax = maxTax1
-        print(totalStateTax)
-    elif state_dict2sAL["min"] < income < state_dict2sAL["max"]:
-        maxTax1 = sbracket1_al.taxrate * state_dict1sAL["max"]
-        maxTax2 = sbracket2_al.taxrate * income
-        totalStateTax = maxTax1 + maxTax2
-        print(totalStateTax)
-    elif state_dict3sAL["min"] < income:
-        maxTax1 = sbracket1_al.taxrate * state_dict1sAL["max"]
-        maxTax2 = sbracket2_al.taxrate * state_dict2sAL["max"]
-        maxTax3 = sbracket3_al.taxrate * income
-        totalStateTax = maxTax1 + maxTax2 + maxTax3
-        print(totalStateTax)
-    else:
-        print("Error in state ALABAMA/SINGLE if statement")
-# ALASKA no tax
-elif residence == "ALASKA":
-    totalStateTax = 0
-    print(totalStateTax)
-else:
-    print("Other states follow same structure")
 
 # FEDERAL withholding vs total amount owed
 if fedtaxWithheld > totalFedTax:

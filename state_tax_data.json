@@ -1,0 +1,29 @@
+{
+  "listStates": [
+    {
+      "stateName": "ALABAMA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY"
+        }
+      ]
+    }
+  ]
+}
