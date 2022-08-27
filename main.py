@@ -195,19 +195,41 @@ for status in data['listStates'][i]['filingStatus'][j]['status']:
 k = 0
 # Loop needs work, just transferred from test file
 for incomes in data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]:
-    if data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['income'] < income < data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['income']:
+    if income < data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['income']:
         k = k
-        print("3rd loop works")
-        print(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['income'])
-        taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
-        print(taxRate)
+        print("3rd loop works, 1st if iteration success")
+        incomebracket = str(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['income'])
+        print("You made less than " + incomebracket)
+        staxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
+        print(staxRate)
+        break
+    elif income > data['listStates'][i]['filingStatus'][j]['incomeBrackets'][-1]['income']:
+        k = k
+        print("3rd loop works, elif iteration success")
+        staxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][-1]['taxRate']
+        print(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][-1]['income'])
+        print("Negative indexing iteration")
         break
     else:
         print("3rd loop failed")
         k += 1
+# For loops successfully parse through json data, may need some situational fine-tuning
 
-# Declaring totalStateTax variable
-totalStateTax = 0
+# Begin totalStateTax calculations using staxRate variable
+totalStateTax = staxRate * income
+
+if totalStateTax > statetaxWithheld:
+    totalstaxOwed = totalStateTax - statetaxWithheld
+    totalstaxOwed = str(totalstaxOwed)
+    print("Congratulations! We're finished with your State tax calculations.")
+    print("You currently owe " + totalstaxOwed + " in State taxes.")
+elif totalStateTax < statetaxWithheld:
+    statetaxRefund = statetaxWithheld - totalStateTax
+    statetaxRefund = str(statetaxRefund)
+    print("Congratulations! We're finished with your State tax calculations.")
+    print("You'll be receiving a " + statetaxRefund + " refund!")
+else:
+    print("Error in totalStateTax if")
 
 # FEDERAL withholding vs total amount owed
 if fedtaxWithheld > totalFedTax:
@@ -223,22 +245,6 @@ elif fedtaxWithheld < totalFedTax:
     print("This year you owe " + fedtaxOwed + " in Federal taxes.")
 else:
     print("Error in fedtaxWithheld vs totalFedTax if statements")
-
-# STATE withholding vs total amount owed
-if statetaxWithheld > totalStateTax:
-    print("Congratulations! You'll be receiving a refund from your State taxes this year.")
-    stateRefund = statetaxWithheld - totalStateTax
-    stateRefund = abs(stateRefund)
-    stateRefund = str(stateRefund)
-    print("Your refund amount is " + stateRefund)
-elif statetaxWithheld < totalStateTax:
-    print("Congratulations, we're finished your State tax calculations.")
-    statetaxOwed = totalStateTax - statetaxWithheld
-    statetaxOwed = str(statetaxOwed)
-    print("This year you owe " + statetaxOwed + " in State taxes.")
-else:
-    print("Error in statetaxWithheld vs totalstateTax if statements")
-
 
 # Social Security tax calculations
 
