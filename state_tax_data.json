@@ -78,15 +78,19 @@
           "incomeBrackets": [
             {
               "income": 0,
-              "taxRate": 0.02
+              "taxRate": 0.0259
             },
             {
-              "income": 500,
-              "taxRate": 0.04
+              "income": 27808,
+              "taxRate": 0.0334
             },
             {
-              "income": 3000,
-              "taxRate": 0.05
+              "income": 55615,
+              "taxRate": 0.0417
+            },
+            {
+              "income": 166843,
+              "taxRate": 0.0450
             }
           ]
         },
@@ -95,15 +99,19 @@
           "incomeBrackets": [
             {
               "income": 0,
-              "taxRate": 0.02
+              "taxRate": 0.0259
             },
             {
-              "income": 1000,
-              "taxRate": 0.04
+              "income": 55615,
+              "taxRate": 0.0334
             },
             {
-              "income": 6000,
-              "taxRate": 0.05
+              "income": 111229,
+              "taxRate": 0.0417
+            },
+            {
+              "income": 333684,
+              "taxRate": 0.0450
             }
           ]
         }

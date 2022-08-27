@@ -189,28 +189,21 @@ for status in data['listStates'][i]['filingStatus'][j]['status']:
         j += 1
 
 # Beginning of third iteration
+
 k = 0
-# Loop needs work, just transferred from test file
-for incomes in data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]:
-    if income < data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['income']:
+k_range = (len(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]) + 1)
+while k < k_range:
+    if income in range(int(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['income']), int(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['income']), 1):
+        print("Success in range for loop")
         k = k
-        print("3rd loop works, 1st if iteration success")
-        incomebracket = str(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['income'])
-        print("You made less than " + incomebracket)
         staxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
-        print(staxRate)
-        break
-    elif income > data['listStates'][i]['filingStatus'][j]['incomeBrackets'][-1]['income']:
-        k = k
-        print("3rd loop works, elif iteration success")
-        staxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][-1]['taxRate']
-        print(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][-1]['income'])
-        print("Negative indexing iteration")
         break
     else:
-        print("3rd loop failed")
+        print("Range loop failed")
+        print(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['income'])
+        print(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['income'])
+        print(k)
         k += 1
-# For loops successfully parse through json data, may need some situational fine-tuning
 
 # Begin totalStateTax calculations using staxRate variable
 totalStateTax = staxRate * income
