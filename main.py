@@ -149,7 +149,7 @@ elif filing_status == "MARRIED FILING JOINTLY":
         totalFedTax = maxTax1 + maxTax2 + maxTax3 + maxTax4 + maxTax5 + maxTax6
         print(totalFedTax)
 
-    elif fed_dict7mfj["min"] < income < fed_dict7mfj["max"]:
+    elif income > fed_dict7mfj["min"]:
         maxTax1 = fbracket1.fedrate() * fed_dict1mfj["max"]
         maxTax2 = fbracket2.fedrate() * (fed_dict2mfj["max"] - fed_dict1mfj["max"])
         maxTax3 = fbracket3.fedrate() * (fed_dict3mfj["max"] - fed_dict2mfj["max"])
