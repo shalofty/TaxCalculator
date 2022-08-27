@@ -6,9 +6,6 @@ import json
 with open("state_tax_data.json") as state_tax_data:
     data = json.load(state_tax_data)
 
-# State imports
-from state_dicts import *
-from state_utils import *
 
 # User input for annual income
 print("Please have your W2 information ready.")
