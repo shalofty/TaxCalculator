@@ -21,7 +21,21 @@
           ]
         },
         {
-          "status": "MARRIED FILING JOINTLY"
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
         }
       ]
     }
