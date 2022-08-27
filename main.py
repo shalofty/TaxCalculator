@@ -198,6 +198,11 @@ while k < k_range:
         k = k
         staxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
         break
+    elif income > data['listStates'][i]['filingStatus'][j]['incomeBrackets'][-1]['income']:
+        print("Negative iteration success")
+        k = k
+        staxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][-1]['taxRate']
+        break
     else:
         print("Range loop failed")
         print(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['income'])
