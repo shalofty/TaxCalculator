@@ -1,4 +1,4 @@
-from numpy import arange
+import math
 
 # Federal imports
 from fed_dicts import *
@@ -191,16 +191,18 @@ for status in data['listStates'][i]['filingStatus'][j]['status']:
         j += 1
 
 # Beginning of third iteration
-# Need workaround for float precision
+# Round down income to avoid errors due to floats with range function
+range_income = math.floor(income)
 k = 0
 k_range = (len(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]) + 1)
 while k < k_range:
-    if income in range(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['income'], data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['income'], 1):
+    # range() inputs are information from json data
+    if range_income in range(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['income'], data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['income'], 1):
         print("Success in range for loop")
         k = k
         staxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
         break
-    elif income > data['listStates'][i]['filingStatus'][j]['incomeBrackets'][-1]['income']:
+    elif range_income > data['listStates'][i]['filingStatus'][j]['incomeBrackets'][-1]['income']:
         print("Negative iteration success")
         k = k
         staxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][-1]['taxRate']
@@ -217,12 +219,14 @@ totalStateTax = staxRate * income
 
 if totalStateTax > statetaxWithheld:
     totalstaxOwed = totalStateTax - statetaxWithheld
-    totalstaxOwed = str(totalstaxOwed)
+    # Round 2 decimal places for output to user
+    totalstaxOwed = str(round(totalstaxOwed, 2))
     print("Congratulations! We're finished with your State tax calculations.")
     print("You currently owe " + totalstaxOwed + " in State taxes.")
 elif totalStateTax < statetaxWithheld:
     statetaxRefund = statetaxWithheld - totalStateTax
-    statetaxRefund = str(statetaxRefund)
+    # Round 2 decimal places for output to user
+    statetaxRefund = str(round(statetaxRefund, 2))
     print("Congratulations! We're finished with your State tax calculations.")
     print("You'll be receiving a " + statetaxRefund + " refund!")
 elif totalStateTax == 0:
@@ -235,12 +239,14 @@ if fedtaxWithheld > totalFedTax:
     print("Congratulations! You'll be receiving a refund from your Federal taxes this year.")
     fedRefund = fedtaxWithheld - totalFedTax
     fedRefund = abs(fedRefund)
-    fedRefund = str(fedRefund)
+    # Round 2 decimal places for output to user
+    fedRefund = str(round(fedRefund, 2))
     print("Your refund amount is " + fedRefund)
 elif fedtaxWithheld < totalFedTax:
     print("Congratulations, we're finished your Federal tax calculations.")
     fedtaxOwed = totalFedTax - fedtaxWithheld
-    fedtaxOwed = str(fedtaxOwed)
+    # Round 2 decimal places for output to user
+    fedtaxOwed = str(round(fedtaxOwed, 2))
     print("This year you owe " + fedtaxOwed + " in Federal taxes.")
 else:
     print("Error in fedtaxWithheld vs totalFedTax if statements")
@@ -257,11 +263,13 @@ else:
 
 if sstaxOwed > sstaxWithheld:
     sstaxOwed = sstaxOwed - sstaxWithheld
-    sstaxOwed = str(sstaxOwed)
+    # Round 2 decimal places for output to user
+    sstaxOwed = str(round(sstaxOwed, 2))
     print("You didn't pay enough on Social Security tax this year. You'll need to pay " + sstaxOwed)
 elif sstaxOwed < sstaxWithheld:
     sstaxOwed = sstaxWithheld - sstaxOwed
-    sstaxOwed = str(sstaxOwed)
+    # Round 2 decimal places for output to user
+    sstaxOwed = str(round(sstaxOwed, 2))
     print("You overpaid on your Social Security tax this year. You'll receive " + sstaxOwed + " as a refund.")
 else:
     print("Error in Social Security calculations if statement pt. 2")
