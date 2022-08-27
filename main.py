@@ -88,7 +88,7 @@ if filing_status == "SINGLE":
         totalFedTax = maxTax1 + maxTax2 + maxTax3 + maxTax4 + maxTax5 + maxTax6
         print(totalFedTax)
 
-    elif fed_dict7s["min"] < income < fed_dict7s["max"]:
+    elif income > fed_dict7s["min"]:
         maxTax1 = fbracket1.fedrate() * fed_dict1s["max"]
         maxTax2 = fbracket2.fedrate() * (fed_dict2s["max"] - fed_dict1s["max"])
         maxTax3 = fbracket3.fedrate() * (fed_dict3s["max"] - fed_dict2s["max"])
