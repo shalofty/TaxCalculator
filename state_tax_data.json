@@ -38,6 +38,1909 @@
           ]
         }
       ]
+    },
+    {
+      "stateName": "ALASKA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.0
+            },
+            {
+              "income": 0,
+              "taxRate": 0.0
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.0
+            },
+            {
+              "income": 0,
+              "taxRate": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "ARIZONA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "ARKANSAS",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "CALIFORNIA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "COLORADO",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "CONNECTICUT",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "DELAWARE",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "FLORIDA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "GEORGIA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "IDAHO",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "ILLINOIS",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "INDIANA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "IOWA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "KANSAS",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "KENTUCKY",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "LOUISIANA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "MAINE",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "MARYLAND",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "MASSACHUSETTS",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "MICHIGAN",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "MINNESOTA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "MISSISSIPPI",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "MISSOURI",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "MONTANA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "NEBRASKA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "NEVADA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "NEW HAMPSHIRE",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "NEW JERSEY",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "NEW MEXICO",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "NEW YORK",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "NORTH CAROLINA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "NORTH DAKOTA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "OHIO",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "OKLAHOMA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "OREGON",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "PENNSYLVANIA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "RHODE ISLAND",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "SOUTH CAROLINA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "SOUTH DAKOTA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "TENNESSEE",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "TEXAS",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "UTAH",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "VERMONT",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "VIRGINIA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "WASHINGTON",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "WEST VIRGINIA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "WISCONSIN",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "WYOMING",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "DISTRICT OF COLUMBIA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 500,
+              "taxRate": 0.04
+            },
+            {
+              "income": 3000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.02
+            },
+            {
+              "income": 1000,
+              "taxRate": 0.04
+            },
+            {
+              "income": 6000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
     }
   ]
 }

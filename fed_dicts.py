@@ -4,11 +4,13 @@
 
 ss_dict = {
     "min": 0,
-    "max": 147000
+    "max": 147000,
+    "taxRate": 0.062
 }
 
 medicare_dict = {
-    "min": 0
+    "min": 0,
+    "taxRate": 0.0145
 }
 
 # Bracket Dictionaries

@@ -225,6 +225,8 @@ elif totalStateTax < statetaxWithheld:
     statetaxRefund = str(statetaxRefund)
     print("Congratulations! We're finished with your State tax calculations.")
     print("You'll be receiving a " + statetaxRefund + " refund!")
+elif totalStateTax == 0:
+    print("Congratulations! You don't owe any State taxes!")
 else:
     print("Error in totalStateTax if")
 
@@ -244,13 +246,11 @@ else:
     print("Error in fedtaxWithheld vs totalFedTax if statements")
 
 # Social Security tax calculations
-
-# Declare sstaxOwed variable
-sstaxOwed = 0
-
 if income < ss_dict["max"]:
+    # Declare sstaxOwed variable
     sstaxOwed = social_security.taxrate * income
 elif income > ss_dict["max"]:
+    # Social Security tax has an income ceiling, no tax on any income past ss_dict["max"]
     sstaxOwed = social_security.taxrate * ss_dict["max"]
 else:
     print("Error in Social Security calculations if statement pt. 2")
