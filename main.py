@@ -1,3 +1,5 @@
+from numpy import arange
+
 # Federal imports
 from fed_dicts import *
 from fed_utils import *
@@ -189,11 +191,11 @@ for status in data['listStates'][i]['filingStatus'][j]['status']:
         j += 1
 
 # Beginning of third iteration
-
+# Need workaround for float precision
 k = 0
 k_range = (len(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]) + 1)
 while k < k_range:
-    if income in range(int(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['income']), int(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['income']), 1):
+    if income in range(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['income'], data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['income'], 1):
         print("Success in range for loop")
         k = k
         staxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
