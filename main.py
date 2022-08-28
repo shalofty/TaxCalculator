@@ -190,6 +190,224 @@ for status in data['listStates'][i]['filingStatus'][j]['status']:
         print("2nd loop failed")
         j += 1
 
+# Possible solution for state bracket calculations, similar to how federal was handled
+num_brackets = len(data['listStates'][i]['filingStatus'][j]['incomeBrackets'])
+print(num_brackets)
+k = 0
+
+# Flatrate tax states
+if num_brackets == 1:
+    flatrateTax = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
+    staxRate = flatrateTax
+    print("Flatrate state error")
+
+# 2 bracket states
+elif num_brackets == 2:
+    b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
+    b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
+    maxstateTax1 = income * b1taxRate
+    maxstateTax2 = income * b2taxRate
+    print("2 bracket state error")
+
+# 3 bracket states
+elif num_brackets == 3:
+    b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
+    b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
+    b3taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 2]['taxRate']
+    maxstateTax1 = income * b1taxRate
+    maxstateTax2 = income * b2taxRate
+    maxstateTax3 = income * b3taxRate
+    print("3 bracket state error")
+
+# 4 bracket states
+elif num_brackets == 4:
+    # For testing purposes, Arizona is a 4 bracket state
+    b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
+    b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
+    b3taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 2]['taxRate']
+    b4taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 3]['taxRate']
+    # maxstateTax is wrong, should be bracket income max * bntaxRate
+    maxstateTax1 = income * b1taxRate
+    maxstateTax2 = income * b2taxRate
+    maxstateTax3 = income * b3taxRate
+    maxstateTax4 = income * b4taxRate
+    print("4 bracket state error")
+
+# 5 bracket states
+elif num_brackets == 5:
+    b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
+    b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
+    b3taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 2]['taxRate']
+    b4taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 3]['taxRate']
+    b5taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 4]['taxRate']
+    maxstateTax1 = income * b1taxRate
+    maxstateTax2 = income * b2taxRate
+    maxstateTax3 = income * b3taxRate
+    maxstateTax4 = income * b4taxRate
+    maxstateTax5 = income * b5taxRate
+    print("5 bracket state error")
+
+# 6 bracket states
+elif num_brackets == 6:
+    b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
+    b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
+    b3taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 2]['taxRate']
+    b4taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 3]['taxRate']
+    b5taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 4]['taxRate']
+    b6taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 5]['taxRate']
+    maxstateTax1 = income * b1taxRate
+    maxstateTax2 = income * b2taxRate
+    maxstateTax3 = income * b3taxRate
+    maxstateTax4 = income * b4taxRate
+    maxstateTax5 = income * b5taxRate
+    maxstateTax6 = income * b6taxRate
+    print("6 bracket state error")
+
+# 7 bracket states
+elif num_brackets == 7:
+    b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
+    b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
+    b3taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 2]['taxRate']
+    b4taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 3]['taxRate']
+    b5taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 4]['taxRate']
+    b6taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 5]['taxRate']
+    b7taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 6]['taxRate']
+    maxstateTax1 = income * b1taxRate
+    maxstateTax2 = income * b2taxRate
+    maxstateTax3 = income * b3taxRate
+    maxstateTax4 = income * b4taxRate
+    maxstateTax5 = income * b5taxRate
+    maxstateTax6 = income * b6taxRate
+    maxstateTax7 = income * b7taxRate
+    print("7 bracket state error")
+
+# 8 bracket states
+elif num_brackets == 8:
+    b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
+    b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
+    b3taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 2]['taxRate']
+    b4taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 3]['taxRate']
+    b5taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 4]['taxRate']
+    b6taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 5]['taxRate']
+    b7taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 6]['taxRate']
+    b8taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 7]['taxRate']
+    maxstateTax1 = income * b1taxRate
+    maxstateTax2 = income * b2taxRate
+    maxstateTax3 = income * b3taxRate
+    maxstateTax4 = income * b4taxRate
+    maxstateTax5 = income * b5taxRate
+    maxstateTax6 = income * b6taxRate
+    maxstateTax7 = income * b7taxRate
+    maxstateTax8 = income * b8taxRate
+    print("8 bracket state error")
+
+# 9 bracket states
+elif num_brackets == 9:
+    b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
+    b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
+    b3taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 2]['taxRate']
+    b4taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 3]['taxRate']
+    b5taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 4]['taxRate']
+    b6taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 5]['taxRate']
+    b7taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 6]['taxRate']
+    b8taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 7]['taxRate']
+    b9taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 8]['taxRate']
+    maxstateTax1 = income * b1taxRate
+    maxstateTax2 = income * b2taxRate
+    maxstateTax3 = income * b3taxRate
+    maxstateTax4 = income * b4taxRate
+    maxstateTax5 = income * b5taxRate
+    maxstateTax6 = income * b6taxRate
+    maxstateTax7 = income * b7taxRate
+    maxstateTax8 = income * b8taxRate
+    maxstateTax9 = income * b9taxRate
+    print("9 bracket state error")
+
+# 10 bracket states
+elif num_brackets == 10:
+    b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
+    b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
+    b3taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 2]['taxRate']
+    b4taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 3]['taxRate']
+    b5taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 4]['taxRate']
+    b6taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 5]['taxRate']
+    b7taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 6]['taxRate']
+    b8taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 7]['taxRate']
+    b9taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 8]['taxRate']
+    b10taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 9]['taxRate']
+    maxstateTax1 = income * b1taxRate
+    maxstateTax2 = income * b2taxRate
+    maxstateTax3 = income * b3taxRate
+    maxstateTax4 = income * b4taxRate
+    maxstateTax5 = income * b5taxRate
+    maxstateTax6 = income * b6taxRate
+    maxstateTax7 = income * b7taxRate
+    maxstateTax8 = income * b8taxRate
+    maxstateTax9 = income * b9taxRate
+    maxstateTax10 = income * b10taxRate
+    print("10 bracket state error")
+
+# 11 bracket states
+# No state has 11 brackets
+elif num_brackets == 11:
+    b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
+    b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
+    b3taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 2]['taxRate']
+    b4taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 3]['taxRate']
+    b5taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 4]['taxRate']
+    b6taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 5]['taxRate']
+    b7taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 6]['taxRate']
+    b8taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 7]['taxRate']
+    b9taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 8]['taxRate']
+    b10taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 9]['taxRate']
+    b11taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 10]['taxRate']
+    maxstateTax1 = income * b1taxRate
+    maxstateTax2 = income * b2taxRate
+    maxstateTax3 = income * b3taxRate
+    maxstateTax4 = income * b4taxRate
+    maxstateTax5 = income * b5taxRate
+    maxstateTax6 = income * b6taxRate
+    maxstateTax7 = income * b7taxRate
+    maxstateTax8 = income * b8taxRate
+    maxstateTax9 = income * b9taxRate
+    maxstateTax10 = income * b10taxRate
+    maxstateTax11 = income * b11taxRate
+    print("11 bracket state error")
+
+# 12 bracket states
+elif num_brackets == 12:
+    b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
+    b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
+    b3taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 2]['taxRate']
+    b4taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 3]['taxRate']
+    b5taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 4]['taxRate']
+    b6taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 5]['taxRate']
+    b7taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 6]['taxRate']
+    b8taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 7]['taxRate']
+    b9taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 8]['taxRate']
+    b10taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 9]['taxRate']
+    b11taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 10]['taxRate']
+    b12taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 11]['taxRate']
+    maxstateTax1 = income * b1taxRate
+    maxstateTax2 = income * b2taxRate
+    maxstateTax3 = income * b3taxRate
+    maxstateTax4 = income * b4taxRate
+    maxstateTax5 = income * b5taxRate
+    maxstateTax6 = income * b6taxRate
+    maxstateTax7 = income * b7taxRate
+    maxstateTax8 = income * b8taxRate
+    maxstateTax9 = income * b9taxRate
+    maxstateTax10 = income * b10taxRate
+    maxstateTax11 = income * b11taxRate
+    maxstateTax12 = income * b12taxRate
+    print("12 bracket state error")
+
+else:
+    print("Error in num_brackets if statement")
+
+"""
+
+# Wont work because doesn't take into account bracketed tax system
 # Beginning of third iteration
 # Round down income to avoid errors due to floats with range function
 range_income = math.floor(income)
@@ -213,6 +431,7 @@ while k < k_range:
         print(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['income'])
         print(k)
         k += 1
+"""
 
 # Begin totalStateTax calculations using staxRate variable
 totalStateTax = staxRate * income
