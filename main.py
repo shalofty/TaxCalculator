@@ -1,5 +1,7 @@
 import math
 
+from state_utils import *
+
 # Federal imports
 from fed_dicts import *
 from fed_utils import *
@@ -7,7 +9,6 @@ import json
 
 with open("state_tax_data.json") as state_tax_data:
     data = json.load(state_tax_data)
-
 
 # User input for annual income
 print("Please have your W2 information ready.")
@@ -166,7 +167,6 @@ elif filing_status == "MARRIED FILING JOINTLY":
     else:
         print("Error in fed_mfj if statement")
 
-
 # First iteration through json to see if stateName matches state_input from user
 i = 0
 for states in data['listStates'][i]['stateName']:
@@ -191,35 +191,54 @@ for status in data['listStates'][i]['filingStatus'][j]['status']:
         j += 1
 
 # Possible solution for state bracket calculations, similar to how federal was handled
-num_brackets = len(data['listStates'][i]['filingStatus'][j]['incomeBrackets'])
-print(num_brackets)
+
+# Comparing income, incomeMin < income < incomeMax
 k = 0
+for incomes in data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]:
+    # bracketMin and bracketMax must be within for loop for k += 1 to work
+    bracketMin = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['incomeMin']
+    bracketMax = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['incomeMax']
+    if bracketMin < income < bracketMax:
+        print("bracketMin < income < bracketMax works")
+        num_brackets = len(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k])
+        print(num_brackets)
+        k = k
+        break
+    else:
+        print("bracketMin/Max if statement error")
+        print(bracketMin)
+        print(bracketMax)
+        k += 1
 
-# Flatrate tax states
-if num_brackets == 1:
-    flatrateTax = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
-    staxRate = flatrateTax
-    print("Flatrate state error")
 
-# 2 bracket states
-elif num_brackets == 2:
-    b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
-    b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
-    maxstateTax1 = income * b1taxRate
-    maxstateTax2 = income * b2taxRate
+# incomeBrackets array length
+bracket_length = len(data['listStates'][i]['filingStatus'][j]['incomeBrackets'])
+
+# Calculating state taxes based on bracket system
+if k == 0 and income < bracketMax:
+    # Calculating single bracket tax as sbrax1
+    sbrax1 = sbracket1.bracketrate()
+    totalStateTax = sbrax1
+    print(sbrax1)
+
+# 2 bracket states taxRate
+elif k == 1:
+    # Calculating tax for 2 bracket system
+    sbrax1 = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['incomeMax'] * data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
+    brack2taxable = income - data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['incomeMax']
     print("2 bracket state error")
 
-# 3 bracket states
-elif num_brackets == 3:
-    b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
-    b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
-    b3taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 2]['taxRate']
-    maxstateTax1 = income * b1taxRate
-    maxstateTax2 = income * b2taxRate
-    maxstateTax3 = income * b3taxRate
-    print("3 bracket state error")
+# 3 bracket states taxRate
+elif k == 2:
+    sbracketTax1 = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k - 2]['taxRate']
+    print(sbracketTax1)
+    sbracketTax2 = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k - 1]['taxRate']
+    print(sbracketTax2)
+    sbracketTax3 = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
+    print(sbracketTax3)
+    print(k)
 
-# 4 bracket states
+# 4 bracket states taxRate
 elif num_brackets == 4:
     # For testing purposes, Arizona is a 4 bracket state
     b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
@@ -227,27 +246,18 @@ elif num_brackets == 4:
     b3taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 2]['taxRate']
     b4taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 3]['taxRate']
     # maxstateTax is wrong, should be bracket income max * bntaxRate
-    maxstateTax1 = income * b1taxRate
-    maxstateTax2 = income * b2taxRate
-    maxstateTax3 = income * b3taxRate
-    maxstateTax4 = income * b4taxRate
     print("4 bracket state error")
 
-# 5 bracket states
+# 5 bracket states taxRate
 elif num_brackets == 5:
     b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
     b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
     b3taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 2]['taxRate']
     b4taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 3]['taxRate']
     b5taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 4]['taxRate']
-    maxstateTax1 = income * b1taxRate
-    maxstateTax2 = income * b2taxRate
-    maxstateTax3 = income * b3taxRate
-    maxstateTax4 = income * b4taxRate
-    maxstateTax5 = income * b5taxRate
     print("5 bracket state error")
 
-# 6 bracket states
+# 6 bracket states taxRate
 elif num_brackets == 6:
     b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
     b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
@@ -255,15 +265,9 @@ elif num_brackets == 6:
     b4taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 3]['taxRate']
     b5taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 4]['taxRate']
     b6taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 5]['taxRate']
-    maxstateTax1 = income * b1taxRate
-    maxstateTax2 = income * b2taxRate
-    maxstateTax3 = income * b3taxRate
-    maxstateTax4 = income * b4taxRate
-    maxstateTax5 = income * b5taxRate
-    maxstateTax6 = income * b6taxRate
     print("6 bracket state error")
 
-# 7 bracket states
+# 7 bracket states taxRate
 elif num_brackets == 7:
     b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
     b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
@@ -272,16 +276,9 @@ elif num_brackets == 7:
     b5taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 4]['taxRate']
     b6taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 5]['taxRate']
     b7taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 6]['taxRate']
-    maxstateTax1 = income * b1taxRate
-    maxstateTax2 = income * b2taxRate
-    maxstateTax3 = income * b3taxRate
-    maxstateTax4 = income * b4taxRate
-    maxstateTax5 = income * b5taxRate
-    maxstateTax6 = income * b6taxRate
-    maxstateTax7 = income * b7taxRate
     print("7 bracket state error")
 
-# 8 bracket states
+# 8 bracket states taxRate
 elif num_brackets == 8:
     b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
     b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
@@ -291,17 +288,9 @@ elif num_brackets == 8:
     b6taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 5]['taxRate']
     b7taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 6]['taxRate']
     b8taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 7]['taxRate']
-    maxstateTax1 = income * b1taxRate
-    maxstateTax2 = income * b2taxRate
-    maxstateTax3 = income * b3taxRate
-    maxstateTax4 = income * b4taxRate
-    maxstateTax5 = income * b5taxRate
-    maxstateTax6 = income * b6taxRate
-    maxstateTax7 = income * b7taxRate
-    maxstateTax8 = income * b8taxRate
     print("8 bracket state error")
 
-# 9 bracket states
+# 9 bracket states taxRate
 elif num_brackets == 9:
     b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
     b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
@@ -312,18 +301,9 @@ elif num_brackets == 9:
     b7taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 6]['taxRate']
     b8taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 7]['taxRate']
     b9taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 8]['taxRate']
-    maxstateTax1 = income * b1taxRate
-    maxstateTax2 = income * b2taxRate
-    maxstateTax3 = income * b3taxRate
-    maxstateTax4 = income * b4taxRate
-    maxstateTax5 = income * b5taxRate
-    maxstateTax6 = income * b6taxRate
-    maxstateTax7 = income * b7taxRate
-    maxstateTax8 = income * b8taxRate
-    maxstateTax9 = income * b9taxRate
     print("9 bracket state error")
 
-# 10 bracket states
+# 10 bracket states taxRate
 elif num_brackets == 10:
     b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
     b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
@@ -335,19 +315,9 @@ elif num_brackets == 10:
     b8taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 7]['taxRate']
     b9taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 8]['taxRate']
     b10taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 9]['taxRate']
-    maxstateTax1 = income * b1taxRate
-    maxstateTax2 = income * b2taxRate
-    maxstateTax3 = income * b3taxRate
-    maxstateTax4 = income * b4taxRate
-    maxstateTax5 = income * b5taxRate
-    maxstateTax6 = income * b6taxRate
-    maxstateTax7 = income * b7taxRate
-    maxstateTax8 = income * b8taxRate
-    maxstateTax9 = income * b9taxRate
-    maxstateTax10 = income * b10taxRate
     print("10 bracket state error")
 
-# 11 bracket states
+# 11 bracket states taxRate
 # No state has 11 brackets
 elif num_brackets == 11:
     b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
@@ -361,20 +331,9 @@ elif num_brackets == 11:
     b9taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 8]['taxRate']
     b10taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 9]['taxRate']
     b11taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 10]['taxRate']
-    maxstateTax1 = income * b1taxRate
-    maxstateTax2 = income * b2taxRate
-    maxstateTax3 = income * b3taxRate
-    maxstateTax4 = income * b4taxRate
-    maxstateTax5 = income * b5taxRate
-    maxstateTax6 = income * b6taxRate
-    maxstateTax7 = income * b7taxRate
-    maxstateTax8 = income * b8taxRate
-    maxstateTax9 = income * b9taxRate
-    maxstateTax10 = income * b10taxRate
-    maxstateTax11 = income * b11taxRate
     print("11 bracket state error")
 
-# 12 bracket states
+# 12 bracket states taxRate
 elif num_brackets == 12:
     b1taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
     b2taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['taxRate']
@@ -388,53 +347,12 @@ elif num_brackets == 12:
     b10taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 9]['taxRate']
     b11taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 10]['taxRate']
     b12taxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 11]['taxRate']
-    maxstateTax1 = income * b1taxRate
-    maxstateTax2 = income * b2taxRate
-    maxstateTax3 = income * b3taxRate
-    maxstateTax4 = income * b4taxRate
-    maxstateTax5 = income * b5taxRate
-    maxstateTax6 = income * b6taxRate
-    maxstateTax7 = income * b7taxRate
-    maxstateTax8 = income * b8taxRate
-    maxstateTax9 = income * b9taxRate
-    maxstateTax10 = income * b10taxRate
-    maxstateTax11 = income * b11taxRate
-    maxstateTax12 = income * b12taxRate
     print("12 bracket state error")
 
 else:
     print("Error in num_brackets if statement")
 
-"""
-
-# Wont work because doesn't take into account bracketed tax system
-# Beginning of third iteration
-# Round down income to avoid errors due to floats with range function
-range_income = math.floor(income)
-k = 0
-k_range = (len(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]) + 1)
-while k < k_range:
-    # range() inputs are information from json data
-    if range_income in range(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['income'], data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['income'], 1):
-        print("Success in range for loop")
-        k = k
-        staxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['taxRate']
-        break
-    elif range_income > data['listStates'][i]['filingStatus'][j]['incomeBrackets'][-1]['income']:
-        print("Negative iteration success")
-        k = k
-        staxRate = data['listStates'][i]['filingStatus'][j]['incomeBrackets'][-1]['taxRate']
-        break
-    else:
-        print("Range loop failed")
-        print(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k]['income'])
-        print(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][k + 1]['income'])
-        print(k)
-        k += 1
-"""
-
 # Begin totalStateTax calculations using staxRate variable
-totalStateTax = staxRate * income
 
 if totalStateTax > statetaxWithheld:
     totalstaxOwed = totalStateTax - statetaxWithheld

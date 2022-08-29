@@ -1,4 +1,4 @@
-# Class Utilities
+# Federal Class Utilities
 # Federal Brackets and Tax Rates
 # Tax Rate is the same throughout Brackets hierarchy. Income is varying factor
 class Federal:
@@ -22,7 +22,7 @@ fbracket7 = Federal(7, .37)
 
 class Withholdings:
 
-    def __init__ (self, taxrate):
+    def __init__(self, taxrate):
         self.taxrate = float(taxrate)
 
 
