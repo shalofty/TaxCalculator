@@ -38,7 +38,7 @@
             },
             {
               "incomeMin": 6000,
-              "incomeMax": null,
+              "incomeMax": 10000000000,
               "taxRate": 0.05
             }
           ]

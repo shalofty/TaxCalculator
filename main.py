@@ -3,6 +3,7 @@ from fed_dicts import *
 from fed_utils import *
 import json
 
+# Import json state_tax_data
 with open("state_tax_data.json") as state_tax_data:
     data = json.load(state_tax_data)
 
@@ -36,9 +37,6 @@ sstaxWithheld = float(sstaxWithheld)
 # Declaring Medicare withholdings variable
 medtaxWithheld = input("Please enter the amount of Medicare tax withheld, in Box 6 of your W2: ")
 medtaxWithheld = float(medtaxWithheld)
-
-# If statement comparing bracket dictionaries minimum and maximum values to user income
-# totalFedTax is tax owed
 
 # Federal Tax Calculations
 # SINGLE FILERS SECTION
@@ -228,17 +226,17 @@ class State:
 # State class variables must be instantiated within if statement
 if k == 0 and income < bracketMax:
     # Calculating single bracket tax as sbrax1
+
     sbracket1 = State(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][0]['incomeMin'],
                       data['listStates'][i]['filingStatus'][j]['incomeBrackets'][0]['incomeMax'],
                       data['listStates'][i]['filingStatus'][j]['incomeBrackets'][0]['taxRate'])
 
     sbrax1 = sbracket1.staxrate * income
     totalStateTax = sbrax1
-    print(sbrax1)
+    print(totalStateTax)
 
 # 2 bracket states taxRate
 elif k == 1:
-    # Calculating tax for 2 bracket system
 
     sbracket1 = State(data['listStates'][i]['filingStatus'][j]['incomeBrackets'][0]['incomeMin'],
                       data['listStates'][i]['filingStatus'][j]['incomeBrackets'][0]['incomeMax'],
