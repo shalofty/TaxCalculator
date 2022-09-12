@@ -1,3 +1,5 @@
+A working model can be found on my website at https://stephanhaloftis.com/taxcalc
+
 # taxcalc
 # This project is an income tax calculator written in Python
 
