@@ -7,6 +7,23 @@ import json
 with open("state_tax_data.json") as state_tax_data:
     data = json.load(state_tax_data)
 
+disclaimer = 0
+while disclaimer < 1:
+    print("""
+                ***DISCLAIMER***
+    Some data may have been logged incorrectly
+    i.e. when submitting state tax bracket data
+    An income bracket maximum of 354.45 might have 
+    been put in as 345.54, and so on. If you notice 
+    a small inconsistency such as this, please 
+    submit a request along with the information 
+    related to the calculation so that I can fix it.
+    
+    """)
+    print("Press enter to proceed")
+    input(">>>")
+    disclaimer += 1
+
 prompt = 0
 while prompt <= 1:
     # Main menu function
@@ -14,7 +31,10 @@ while prompt <= 1:
     print("""
            Welcome to the Python Powered Income Tax Calculator
         Created by Shalofty, this application works for 2023 taxes
-
+        
+        * New users should select option 6 before proceeding
+        * Tax Data pulled from taxfoundation.org
+    
         You have the following options (select a number):
         1) Submit Information
         2) Federal Taxes
