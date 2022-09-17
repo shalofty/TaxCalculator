@@ -1,8 +1,9 @@
+A working model can be found on my website at https://stephanhaloftis.com/taxcalc
+
 # taxcalc
 # This project is an income tax calculator written in Python
 
 fed_dicts and fed_utils contain tools for calculating federal income tax.
-state_dicts and state_utils contain tools for calculating state income tax.
 
 There are three variations in the way states tax citizens:
 1) Bracketed taxes
