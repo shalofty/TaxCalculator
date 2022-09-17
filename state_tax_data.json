@@ -63,10 +63,6 @@
             {
               "income": 0,
               "taxRate": 0.0
-            },
-            {
-              "income": 0,
-              "taxRate": 0.0
             }
           ]
         }
@@ -79,19 +75,23 @@
           "status": "SINGLE",
           "incomeBrackets": [
             {
-              "income": 0,
+              "incomeMin": 0,
+              "incomeMax": 27807,
               "taxRate": 0.0259
             },
             {
-              "income": 27808,
+              "incomeMin": 27808,
+              "incomeMax": 55614,
               "taxRate": 0.0334
             },
             {
-              "income": 55615,
+              "incomeMin": 55615,
+              "incomeMax": 166842,
               "taxRate": 0.0417
             },
             {
-              "income": 166843,
+              "incomeMin": 166843,
+              "incomeMax": 10000000000,
               "taxRate": 0.0450
             }
           ]
@@ -100,20 +100,2647 @@
           "status": "MARRIED FILING JOINTLY",
           "incomeBrackets": [
             {
-              "income": 0,
+              "incomeMin": 0,
+              "incomeMax": 55614,
               "taxRate": 0.0259
             },
             {
-              "income": 55615,
+              "incomeMin": 55615,
+              "incomeMax": 111228,
               "taxRate": 0.0334
             },
             {
-              "income": 111229,
+              "incomeMin": 111229,
+              "incomeMax": 333683,
               "taxRate": 0.0417
             },
             {
-              "income": 333684,
+              "incomeMin": 333684,
+              "incomeMax": 10000000000,
               "taxRate": 0.0450
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "ARKANSAS",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 4299,
+              "taxRate": 0.02
+            },
+            {
+              "incomeMin": 4300,
+              "incomeMax": 8499,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 8500,
+              "incomeMax": 10000000000,
+              "taxRate": 0.055
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 4299,
+              "taxRate": 0.02
+            },
+            {
+              "incomeMin": 4300,
+              "incomeMax" : 8499,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 8500,
+              "incomeMax": 10000000000,
+              "taxRate": 0.055
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "CALIFORNIA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 9324,
+              "taxRate": 0.01
+            },
+            {
+              "incomeMin": 9325,
+              "incomeMax": 22106,
+              "taxRate": 0.02
+            },
+            {
+              "incomeMin": 22107,
+              "incomeMax": 34891,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 34892,
+              "incomeMax": 48434,
+              "taxRate": 0.06
+            },
+            {
+              "incomeMin": 48435,
+              "incomeMax": 61213,
+              "taxRate": 0.08
+            },
+            {
+              "incomeMin": 61214,
+              "incomeMax": 312685,
+              "taxRate": 0.0930
+            },
+            {
+              "incomeMin": 312686,
+              "incomeMax": 375220,
+              "taxRate": 0.1030
+            },
+            {
+              "incomeMin": 375221,
+              "incomeMax": 625368,
+              "taxRate": 0.1130
+            },
+            {
+              "incomeMin": 625369,
+              "incomeMax": 999999,
+              "taxRate": 0.1230
+            },
+            {
+              "incomeMin": 1000000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.1330
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 18649,
+              "taxRate": 0.01
+            },
+            {
+              "incomeMin": 18645,
+              "incomeMax": 44213,
+              "taxRate": 0.02
+            },
+            {
+              "incomeMin": 44214,
+              "incomeMax": 69783,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 69784,
+              "incomeMax": 96869,
+              "taxRate": 0.06
+            },
+            {
+              "incomeMin": 96870,
+              "incomeMax": 122427,
+              "taxRate": 0.08
+            },
+            {
+              "incomeMin": 122428,
+              "incomeMax": 625371,
+              "taxRate": 0.0930
+            },
+            {
+              "incomeMin": 625372,
+              "incomeMax": 750441,
+              "taxRate": 0.1030
+            },
+            {
+              "incomeMin": 750442,
+              "incomeMax": 999999,
+              "taxRate": 0.1130
+            },
+            {
+              "incomeMin": 1000000,
+              "incomeMax": 1250737,
+              "taxRate": 0.1230
+            },
+            {
+              "incomeMin": 1250738,
+              "incomeMax": 10000000000,
+              "taxRate": 0.1330
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "COLORADO",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0455
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0455
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "CONNECTICUT",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 9999,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 10000,
+              "incomeMax": 49999,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 50000,
+              "incomeMax": 99999,
+              "taxRate": 0.055
+            },
+            {
+              "incomeMin": 100000,
+              "incomeMax": 199999,
+              "taxRate": 0.0600
+            },
+            {
+              "incomeMin": 200000,
+              "incomeMax": 249999,
+              "taxRate": 0.0650
+            },
+            {
+              "incomeMin": 250000,
+              "incomeMax": 499999,
+              "taxRate": 0.0690
+            },
+            {
+              "incomeMin": 500000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0699
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 19999,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 20000,
+              "incomeMax": 99999,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 100000,
+              "incomeMax": 199999,
+              "taxRate": 0.055
+            },
+            {
+              "incomeMin": 200000,
+              "incomeMax": 399999,
+              "taxRate": 0.0600
+            },
+            {
+              "incomeMin": 400000,
+              "incomeMax": 499999,
+              "taxRate": 0.0650
+            },
+            {
+              "incomeMin": 500000,
+              "incomeMax": 999999,
+              "taxRate": 0.0690
+            },
+            {
+              "incomeMin": 1000000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0699
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "CONNECTICUT",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 9999,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 10000,
+              "incomeMax": 49999,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 50000,
+              "incomeMax": 99999,
+              "taxRate": 0.055
+            },
+            {
+              "incomeMin": 100000,
+              "incomeMax": 199999,
+              "taxRate": 0.0600
+            },
+            {
+              "incomeMin": 200000,
+              "incomeMax": 249999,
+              "taxRate": 0.0650
+            },
+            {
+              "incomeMin": 250000,
+              "incomeMax": 499999,
+              "taxRate": 0.0690
+            },
+            {
+              "incomeMin": 500000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0699
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 19999,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 20000,
+              "incomeMax": 99999,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 100000,
+              "incomeMax": 199999,
+              "taxRate": 0.055
+            },
+            {
+              "incomeMin": 200000,
+              "incomeMax": 399999,
+              "taxRate": 0.0600
+            },
+            {
+              "incomeMin": 400000,
+              "incomeMax": 499999,
+              "taxRate": 0.0650
+            },
+            {
+              "incomeMin": 500000,
+              "incomeMax": 999999,
+              "taxRate": 0.0690
+            },
+            {
+              "incomeMin": 1000000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0699
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "DELAWARE",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 2000,
+              "incomeMax": 4999,
+              "taxRate": 0.022
+            },
+            {
+              "incomeMin": 5000,
+              "incomeMax": 9999,
+              "taxRate": 0.039
+            },
+            {
+              "incomeMin": 10000,
+              "incomeMax": 19999,
+              "taxRate": 0.048
+            },
+            {
+              "incomeMin": 20000,
+              "incomeMax": 24999,
+              "taxRate": 0.052
+            },
+            {
+              "incomeMin": 25000,
+              "incomeMax": 59999,
+              "taxRate": 0.0555
+            },
+            {
+              "incomeMin": 60000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.066
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 2000,
+              "incomeMax": 4999,
+              "taxRate": 0.022
+            },
+            {
+              "incomeMin": 5000,
+              "incomeMax": 9999,
+              "taxRate": 0.039
+            },
+            {
+              "incomeMin": 10000,
+              "incomeMax": 19999,
+              "taxRate": 0.048
+            },
+            {
+              "incomeMin": 20000,
+              "incomeMax": 24999,
+              "taxRate": 0.052
+            },
+            {
+              "incomeMin": 25000,
+              "incomeMax": 59999,
+              "taxRate": 0.0555
+            },
+            {
+              "incomeMin": 60000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.066
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "FLORIDA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.0
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "income": 0,
+              "taxRate": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "GEORGIA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 749,
+              "taxRate": 0.01
+            },
+            {
+              "incomeMin": 750,
+              "incomeMax": 2249,
+              "taxRate": 0.02
+            },
+            {
+              "incomeMin": 2250,
+              "incomeMax": 3749,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 3750,
+              "incomeMax": 5249,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 5250,
+              "incomeMax": 6999,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 7000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0575
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 999,
+              "taxRate": 0.01
+            },
+            {
+              "incomeMin": 1000,
+              "incomeMax": 2999,
+              "taxRate": 0.02
+            },
+            {
+              "incomeMin": 3000,
+              "incomeMax": 4999,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 5000,
+              "incomeMax": 6999,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 7000,
+              "incomeMax": 9999,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 10000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0575
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "HAWAII",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 2399,
+              "taxRate": 0.014
+            },
+            {
+              "incomeMin": 2400,
+              "incomeMax": 4799,
+              "taxRate": 0.032
+            },
+            {
+              "incomeMin": 4800,
+              "incomeMax": 9599,
+              "taxRate": 0.064
+            },
+            {
+              "incomeMin": 9600,
+              "incomeMax": 14399,
+              "taxRate": 0.064
+            },
+            {
+              "incomeMin": 14400,
+              "incomeMax": 19199,
+              "taxRate": 0.068
+            },
+            {
+              "incomeMin": 19200,
+              "incomeMax": 23999,
+              "taxRate": 0.072
+            },
+            {
+              "incomeMin": 24000,
+              "incomeMax": 35999,
+              "taxRate": 0.076
+            },
+            {
+              "incomeMin": 36000,
+              "incomeMax": 47999,
+              "taxRate": 0.079
+            },
+            {
+              "incomeMin": 48000,
+              "incomeMax": 149999,
+              "taxRate": 0.0825
+            },
+            {
+              "incomeMin": 150000,
+              "incomeMax": 174999,
+              "taxRate": 0.09
+            },
+            {
+              "incomeMin": 175000,
+              "incomeMax": 199999,
+              "taxRate": 0.10
+            },
+            {
+              "incomeMin": 200000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.11
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 4799,
+              "taxRate": 0.014
+            },
+            {
+              "incomeMin": 4800,
+              "incomeMax": 9599,
+              "taxRate": 0.032
+            },
+            {
+              "incomeMin": 9600,
+              "incomeMax": 19199,
+              "taxRate": 0.064
+            },
+            {
+              "incomeMin": 19200,
+              "incomeMax": 28799,
+              "taxRate": 0.064
+            },
+            {
+              "incomeMin": 28800,
+              "incomeMax": 38399,
+              "taxRate": 0.068
+            },
+            {
+              "incomeMin": 38400,
+              "incomeMax": 47999,
+              "taxRate": 0.072
+            },
+            {
+              "incomeMin": 48000,
+              "incomeMax": 71999,
+              "taxRate": 0.076
+            },
+            {
+              "incomeMin": 72000,
+              "incomeMax": 95999,
+              "taxRate": 0.079
+            },
+            {
+              "incomeMin": 96000,
+              "incomeMax": 299999,
+              "taxRate": 0.0825
+            },
+            {
+              "incomeMin": 300000,
+              "incomeMax": 349999,
+              "taxRate": 0.09
+            },
+            {
+              "incomeMin": 350000,
+              "incomeMax": 399999,
+              "taxRate": 0.10
+            },
+            {
+              "incomeMin": 400000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "IDAHO",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 1587,
+              "taxRate": 0.01
+            },
+            {
+              "incomeMin": 1588,
+              "incomeMax": 4762,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 4763,
+              "incomeMax": 7938,
+              "taxRate": 0.045
+            },
+            {
+              "incomeMin": 7939,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0450
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 3175,
+              "taxRate": 0.01
+            },
+            {
+              "incomeMin": 3176,
+              "incomeMax": 9525,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 9526,
+              "incomeMax": 15877,
+              "taxRate": 0.045
+            },
+            {
+              "incomeMin": 15878,
+              "incomeMax": 10000000000,
+              "taxRate": 0.06
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "ILLINOIS",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0495
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0495
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "INDIANA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0323
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0323
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "IOWA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 1742,
+              "taxRate": 0.0033
+            },
+            {
+              "incomeMin": 1743,
+              "incomeMax": 3485,
+              "taxRate": 0.0067
+            },
+            {
+              "incomeMin": 3486,
+              "incomeMax": 6971,
+              "taxRate": 0.0225
+            },
+            {
+              "incomeMin": 6972,
+              "incomeMax": 15686,
+              "taxRate": 0.0414
+            },
+            {
+              "incomeMin": 15687,
+              "incomeMax": 26144,
+              "taxRate": 0.0563
+            },
+            {
+              "incomeMin": 26145,
+              "incomeMax": 34859,
+              "taxRate": 0.0596
+            },
+            {
+              "incomeMin": 34860,
+              "incomeMax": 52289,
+              "taxRate": 0.0625
+            },
+            {
+              "incomeMin": 52290,
+              "incomeMax": 78434,
+              "taxRate": 0.0744
+            },
+            {
+              "incomeMin": 78435,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0853
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 1742,
+              "taxRate": 0.0033
+            },
+            {
+              "incomeMin": 1743,
+              "incomeMax": 3485,
+              "taxRate": 0.0067
+            },
+            {
+              "incomeMin": 3486,
+              "incomeMax": 6971,
+              "taxRate": 0.0225
+            },
+            {
+              "incomeMin": 6972,
+              "incomeMax": 15686,
+              "taxRate": 0.0414
+            },
+            {
+              "incomeMin": 15687,
+              "incomeMax": 26144,
+              "taxRate": 0.0563
+            },
+            {
+              "incomeMin": 26145,
+              "incomeMax": 34859,
+              "taxRate": 0.0596
+            },
+            {
+              "incomeMin": 34860,
+              "incomeMax": 52289,
+              "taxRate": 0.0625
+            },
+            {
+              "incomeMin": 52290,
+              "incomeMax": 78434,
+              "taxRate": 0.0744
+            },
+            {
+              "incomeMin": 78435,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0853
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "KANSAS",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 14999,
+              "taxRate": 0.031
+            },
+            {
+              "incomeMin": 15000,
+              "incomeMax": 29999,
+              "taxRate": 0.0525
+            },
+            {
+              "incomeMin": 30000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.057
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 29999,
+              "taxRate": 0.031
+            },
+            {
+              "incomeMin": 30000,
+              "incomeMax" : 59999,
+              "taxRate": 0.0525
+            },
+            {
+              "incomeMin": 60000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.057
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "KENTUCKY",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "LOUISIANA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 12499,
+              "taxRate": 0.0185
+            },
+            {
+              "incomeMin": 12500,
+              "incomeMax": 49999,
+              "taxRate": 0.035
+            },
+            {
+              "incomeMin": 50000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0425
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 24999,
+              "taxRate": 0.0185
+            },
+            {
+              "incomeMin": 25000,
+              "incomeMax" : 99999,
+              "taxRate": 0.035
+            },
+            {
+              "incomeMin": 100000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0425
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "MAINE",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 22999,
+              "taxRate": 0.058
+            },
+            {
+              "incomeMin": 23000,
+              "incomeMax": 54449,
+              "taxRate": 0.0675
+            },
+            {
+              "incomeMin": 54450,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0715
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 45999,
+              "taxRate": 0.058
+            },
+            {
+              "incomeMin": 46000,
+              "incomeMax" : 108899,
+              "taxRate": 0.0675
+            },
+            {
+              "incomeMin": 108900,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0715
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "MARYLAND",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 999,
+              "taxRate": 0.02
+            },
+            {
+              "incomeMin": 1000,
+              "incomeMax": 1999,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 2000,
+              "incomeMax": 2999,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 3000,
+              "incomeMax": 99999,
+              "taxRate": 0.0475
+            },
+            {
+              "incomeMin": 100000,
+              "incomeMax": 124999,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 125000,
+              "incomeMax": 149999,
+              "taxRate": 0.0525
+            },
+            {
+              "incomeMin": 150000,
+              "incomeMax": 249999,
+              "taxRate": 0.055
+            },
+            {
+              "incomeMin": 250000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0575
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 999,
+              "taxRate": 0.02
+            },
+            {
+              "incomeMin": 1000,
+              "incomeMax": 1999,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 2000,
+              "incomeMax": 2999,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 3000,
+              "incomeMax": 149999,
+              "taxRate": 0.0475
+            },
+            {
+              "incomeMin": 150000,
+              "incomeMax": 174999,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 175000,
+              "incomeMax": 224999,
+              "taxRate": 0.0525
+            },
+            {
+              "incomeMin": 225000,
+              "incomeMax": 299999,
+              "taxRate": 0.055
+            },
+            {
+              "incomeMin": 300000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0575
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "MASSACHUSETTS",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "MICHIGAN",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0425
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0425
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "MINNESOTA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 28079,
+              "taxRate": 0.0535
+            },
+            {
+              "incomeMin": 28080,
+              "incomeMax": 92229,
+              "taxRate": 0.068
+            },
+            {
+              "incomeMin": 92230,
+              "incomeMax": 171219,
+              "taxRate": 0.0785
+            },
+            {
+              "incomeMin": 171220,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0985
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 41049,
+              "taxRate": 0.0535
+            },
+            {
+              "incomeMin": 41050,
+              "incomeMax": 163059,
+              "taxRate": 0.068
+            },
+            {
+              "incomeMin": 163060,
+              "incomeMax": 248809,
+              "taxRate": 0.0785
+            },
+            {
+              "incomeMin": 248810,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0985
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "MISSISSIPPI",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 5000,
+              "incomeMax": 9999,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 10000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.05
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 5000,
+              "incomeMax": 9999,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 10000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "MISSOURI",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 108,
+              "incomeMax": 1087,
+              "taxRate": 0.015
+            },
+            {
+              "incomeMin": 1088,
+              "incomeMax": 2175,
+              "taxRate": 0.02
+            },
+            {
+              "incomeMin": 2176,
+              "incomeMax": 3263,
+              "taxRate": 0.025
+            },
+            {
+              "incomeMin": 3264,
+              "incomeMax": 4351,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 4352,
+              "incomeMax": 5439,
+              "taxRate": 0.035
+            },
+            {
+              "incomeMin": 5440,
+              "incomeMax": 6527,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 6528,
+              "incomeMax": 7615,
+              "taxRate": 0.045
+            },
+            {
+              "incomeMin": 7616,
+              "incomeMax": 8703,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 8704,
+              "incomeMax": 10000000000,
+              "taxRate": 0.054
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 108,
+              "incomeMax": 1087,
+              "taxRate": 0.015
+            },
+            {
+              "incomeMin": 1088,
+              "incomeMax": 2175,
+              "taxRate": 0.02
+            },
+            {
+              "incomeMin": 2176,
+              "incomeMax": 3263,
+              "taxRate": 0.025
+            },
+            {
+              "incomeMin": 3264,
+              "incomeMax": 4351,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 4352,
+              "incomeMax": 5439,
+              "taxRate": 0.035
+            },
+            {
+              "incomeMin": 5440,
+              "incomeMax": 6527,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 6528,
+              "incomeMax": 7615,
+              "taxRate": 0.045
+            },
+            {
+              "incomeMin": 7616,
+              "incomeMax": 8703,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 8704,
+              "incomeMax": 10000000000,
+              "taxRate": 0.054
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "MONTANA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 3099,
+              "taxRate": 0.01
+            },
+            {
+              "incomeMin": 3100,
+              "incomeMax": 5499,
+              "taxRate": 0.02
+            },
+            {
+              "incomeMin": 5500,
+              "incomeMax": 8399,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 8400,
+              "incomeMax": 11399,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 11400,
+              "incomeMax": 14599,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 14600,
+              "incomeMax": 18799,
+              "taxRate": 0.06
+            },
+            {
+              "incomeMin": 18800,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0675
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 3099,
+              "taxRate": 0.01
+            },
+            {
+              "incomeMin": 3100,
+              "incomeMax": 5499,
+              "taxRate": 0.02
+            },
+            {
+              "incomeMin": 5500,
+              "incomeMax": 8399,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 8400,
+              "incomeMax": 11399,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 11400,
+              "incomeMax": 14599,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 14600,
+              "incomeMax": 18799,
+              "taxRate": 0.06
+            },
+            {
+              "incomeMin": 18800,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0675
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "NEBRASKA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 3439,
+              "taxRate": 0.0246
+            },
+            {
+              "incomeMin": 3440,
+              "incomeMax": 20589,
+              "taxRate": 0.0351
+            },
+            {
+              "incomeMin": 20590,
+              "incomeMax": 33179,
+              "taxRate": 0.0501
+            },
+            {
+              "incomeMin": 33180,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0684
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 6859,
+              "taxRate": 0.0246
+            },
+            {
+              "incomeMin": 6860,
+              "incomeMax": 41189,
+              "taxRate": 0.0351
+            },
+            {
+              "incomeMin": 41190,
+              "incomeMax": 66359,
+              "taxRate": 0.0501
+            },
+            {
+              "incomeMin": 66360,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0684
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "NEVADA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "NEW HAMPSHIRE",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "NEW JERSEY",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 19999,
+              "taxRate": 0.014
+            },
+            {
+              "incomeMin": 20000,
+              "incomeMax": 34999,
+              "taxRate": 0.0175
+            },
+            {
+              "incomeMin": 35000,
+              "incomeMax": 39999,
+              "taxRate": 0.035
+            },
+            {
+              "incomeMin": 40000,
+              "incomeMax": 74999,
+              "taxRate": 0.05525
+            },
+            {
+              "incomeMin": 75000,
+              "incomeMax": 499999,
+              "taxRate": 0.0637
+            },
+            {
+              "incomeMin": 500000,
+              "incomeMax": 999999,
+              "taxRate": 0.0897
+            },
+            {
+              "incomeMin": 18800,
+              "incomeMax": 10000000000,
+              "taxRate": 0.10750
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 19999,
+              "taxRate": 0.014
+            },
+            {
+              "incomeMin": 20000,
+              "incomeMax": 49999,
+              "taxRate": 0.0175
+            },
+            {
+              "incomeMin": 50000,
+              "incomeMax": 74999,
+              "taxRate": 0.0245
+            },
+            {
+              "incomeMin": 75000,
+              "incomeMax": 79999,
+              "taxRate": 0.035
+            },
+            {
+              "incomeMin": 80000,
+              "incomeMax": 149999,
+              "taxRate": 0.05525
+            },
+            {
+              "incomeMin": 150000,
+              "incomeMax": 499999,
+              "taxRate": 0.0637
+            },
+            {
+              "incomeMin": 500000,
+              "incomeMax": 999999,
+              "taxRate": 0.0897
+            },
+            {
+              "incomeMin": 1000000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.10750
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "NEW MEXICO",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 5499,
+              "taxRate": 0.017
+            },
+            {
+              "incomeMin": 5500,
+              "incomeMax": 10999,
+              "taxRate": 0.032
+            },
+            {
+              "incomeMin": 11000,
+              "incomeMax": 15999,
+              "taxRate": 0.047
+            },
+            {
+              "incomeMin": 16000,
+              "incomeMax": 209999,
+              "taxRate": 0.049
+            },
+            {
+              "incomeMin": 210000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.059
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 7999,
+              "taxRate": 0.017
+            },
+            {
+              "incomeMin": 8000,
+              "incomeMax": 15999,
+              "taxRate": 0.032
+            },
+            {
+              "incomeMin": 16000,
+              "incomeMax": 23999,
+              "taxRate": 0.047
+            },
+            {
+              "incomeMin": 24000,
+              "incomeMax": 3149999,
+              "taxRate": 0.049
+            },
+            {
+              "incomeMin": 315000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.059
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "NEW YORK",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 8499,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 8500,
+              "incomeMax": 11699,
+              "taxRate": 0.045
+            },
+            {
+              "incomeMin": 11700,
+              "incomeMax": 13899,
+              "taxRate": 0.0525
+            },
+            {
+              "incomeMin": 13900,
+              "incomeMax": 80649,
+              "taxRate": 0.0585
+            },
+            {
+              "incomeMin": 80650,
+              "incomeMax": 215399,
+              "taxRate": 0.0625
+            },
+            {
+              "incomeMin": 215400,
+              "incomeMax": 1077549,
+              "taxRate": 0.0685
+            },
+            {
+              "incomeMin": 107550,
+              "incomeMax": 4999999,
+              "taxRate": 0.0965
+            },
+            {
+              "incomeMin": 5000000,
+              "incomeMax": 24999999,
+              "taxRate": 0.1030
+            },
+            {
+              "incomeMin": 25000000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.1090
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 17149,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 17150,
+              "incomeMax": 23599,
+              "taxRate": 0.045
+            },
+            {
+              "incomeMin": 23600,
+              "incomeMax": 27899,
+              "taxRate": 0.0525
+            },
+            {
+              "incomeMin": 27900,
+              "incomeMax": 161549,
+              "taxRate": 0.0585
+            },
+            {
+              "incomeMin": 161550,
+              "incomeMax": 323199,
+              "taxRate": 0.0625
+            },
+            {
+              "incomeMin": 323200,
+              "incomeMax": 2155349,
+              "taxRate": 0.0685
+            },
+            {
+              "incomeMin": 2155350,
+              "incomeMax": 4999999,
+              "taxRate": 0.0965
+            },
+            {
+              "incomeMin": 5000000,
+              "incomeMax": 24999999,
+              "taxRate": 0.1030
+            },
+            {
+              "incomeMin": 25000000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.1090
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "NORTH CAROLINA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0499
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0499
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "NORTH DAKOTA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 40524,
+              "taxRate": 0.011
+            },
+            {
+              "incomeMin": 40525,
+              "incomeMax": 98099,
+              "taxRate": 0.0204
+            },
+            {
+              "incomeMin": 98100,
+              "incomeMax": 204674,
+              "taxRate": 0.0227
+            },
+            {
+              "incomeMin": 204675,
+              "incomeMax": 444999,
+              "taxRate": 0.0264
+            },
+            {
+              "incomeMin": 445000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.029
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 67699,
+              "taxRate": 0.011
+            },
+            {
+              "incomeMin": 67700,
+              "incomeMax": 163549,
+              "taxRate": 0.0204
+            },
+            {
+              "incomeMin": 163550,
+              "incomeMax": 249149,
+              "taxRate": 0.0227
+            },
+            {
+              "incomeMin": 249150,
+              "incomeMax": 444999,
+              "taxRate": 0.0264
+            },
+            {
+              "incomeMin": 445000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.029
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "OHIO",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 25000,
+              "incomeMax": 44249,
+              "taxRate": 0.02765
+            },
+            {
+              "incomeMin": 44250,
+              "incomeMax": 88449,
+              "taxRate": 0.03226
+            },
+            {
+              "incomeMin": 88450,
+              "incomeMax": 110649,
+              "taxRate": 0.03688
+            },
+            {
+              "incomeMin": 110650,
+              "incomeMax": 10000000000,
+              "taxRate": 0.399
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 25000,
+              "incomeMax": 44249,
+              "taxRate": 0.02765
+            },
+            {
+              "incomeMin": 44250,
+              "incomeMax": 88449,
+              "taxRate": 0.03226
+            },
+            {
+              "incomeMin": 88450,
+              "incomeMax": 110649,
+              "taxRate": 0.03688
+            },
+            {
+              "incomeMin": 110650,
+              "incomeMax": 10000000000,
+              "taxRate": 0.399
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "OKLAHOMA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 999,
+              "taxRate": 0.0025
+            },
+            {
+              "incomeMin": 1000,
+              "incomeMax": 2499,
+              "taxRate": 0.0075
+            },
+            {
+              "incomeMin": 2500,
+              "incomeMax": 3749,
+              "taxRate": 0.0175
+            },
+            {
+              "incomeMin": 3750,
+              "incomeMax": 4899,
+              "taxRate": 0.0275
+            },
+            {
+              "incomeMin": 4900,
+              "incomeMax": 7199,
+              "taxRate": 0.0375
+            },
+            {
+              "incomeMin": 7200,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0475
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 1999,
+              "taxRate": 0.0025
+            },
+            {
+              "incomeMin": 2000,
+              "incomeMax": 4999,
+              "taxRate": 0.0075
+            },
+            {
+              "incomeMin": 5000,
+              "incomeMax": 7499,
+              "taxRate": 0.0175
+            },
+            {
+              "incomeMin": 7500,
+              "incomeMax": 9799,
+              "taxRate": 0.0275
+            },
+            {
+              "incomeMin": 9800,
+              "incomeMax": 12199,
+              "taxRate": 0.0375
+            },
+            {
+              "incomeMin": 12200,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0475
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "OREGON",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 3649,
+              "taxRate": 0.0475
+            },
+            {
+              "incomeMin": 3650,
+              "incomeMax": 9199,
+              "taxRate": 0.0675
+            },
+            {
+              "incomeMin": 9200,
+              "incomeMax": 124999,
+              "taxRate": 0.0875
+            },
+            {
+              "incomeMin": 125000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0990
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 7299,
+              "taxRate": 0.0475
+            },
+            {
+              "incomeMin": 7300,
+              "incomeMax": 18399,
+              "taxRate": 0.0675
+            },
+            {
+              "incomeMin": 18400,
+              "incomeMax": 249999,
+              "taxRate": 0.0875
+            },
+            {
+              "incomeMin": 250000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0990
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "PENNSYLVANIA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0307
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0307
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "RHODE ISLAND",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 68199,
+              "taxRate": 0.0375
+            },
+            {
+              "incomeMin": 68200,
+              "incomeMax": 155049,
+              "taxRate": 0.0475
+            },
+            {
+              "incomeMin": 155050,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0599
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 68199,
+              "taxRate": 0.0375
+            },
+            {
+              "incomeMin": 68200,
+              "incomeMax": 155049,
+              "taxRate": 0.0475
+            },
+            {
+              "incomeMin": 155050,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0599
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "SOUTH CAROLINA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 3199,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 3200,
+              "incomeMax": 6409,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 6410,
+              "incomeMax": 9619,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 9620,
+              "incomeMax": 12819,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 12820,
+              "incomeMax": 16039,
+              "taxRate": 0.06
+            },
+            {
+              "incomeMin": 16040,
+              "incomeMax": 10000000000,
+              "taxRate": 0.07
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 3199,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 3200,
+              "incomeMax": 6409,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 6410,
+              "incomeMax": 9619,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 9620,
+              "incomeMax": 12819,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 12820,
+              "incomeMax": 16039,
+              "taxRate": 0.06
+            },
+            {
+              "incomeMin": 16040,
+              "incomeMax": 10000000000,
+              "taxRate": 0.07
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "SOUTH DAKOTA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "TENNESSEE",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "TEXAS",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "UTAH",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0495
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0495
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "VERMONT",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 40949,
+              "taxRate": 0.0335
+            },
+            {
+              "incomeMin": 49950,
+              "incomeMax": 99199,
+              "taxRate": 0.066
+            },
+            {
+              "incomeMin": 99200,
+              "incomeMax": 206949,
+              "taxRate": 0.0760
+            },
+            {
+              "incomeMin": 206950,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0875
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 68399,
+              "taxRate": 0.0335
+            },
+            {
+              "incomeMin": 68400,
+              "incomeMax": 165349,
+              "taxRate": 0.066
+            },
+            {
+              "incomeMin": 165340,
+              "incomeMax": 251949,
+              "taxRate": 0.0760
+            },
+            {
+              "incomeMin": 251950,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0875
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "VIRGINIA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 2999,
+              "taxRate": 0.02
+            },
+            {
+              "incomeMin": 3000,
+              "incomeMax": 4999,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 5000,
+              "incomeMax": 16999,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 17000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0575
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 2999,
+              "taxRate": 0.02
+            },
+            {
+              "incomeMin": 3000,
+              "incomeMax": 4999,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 5000,
+              "incomeMax": 16999,
+              "taxRate": 0.05
+            },
+            {
+              "incomeMin": 17000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0575
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "WASHINGTON",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "WEST VIRGINIA",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 9999,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 10000,
+              "incomeMax": 24999,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 25000,
+              "incomeMax": 39999,
+              "taxRate": 0.045
+            },
+            {
+              "incomeMin": 40000,
+              "incomeMax": 59999,
+              "taxRate": 0.06
+            },
+            {
+              "incomeMin": 60000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.065
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 9999,
+              "taxRate": 0.03
+            },
+            {
+              "incomeMin": 10000,
+              "incomeMax": 24999,
+              "taxRate": 0.04
+            },
+            {
+              "incomeMin": 25000,
+              "incomeMax": 39999,
+              "taxRate": 0.045
+            },
+            {
+              "incomeMin": 40000,
+              "incomeMax": 59999,
+              "taxRate": 0.06
+            },
+            {
+              "incomeMin": 60000,
+              "incomeMax": 10000000000,
+              "taxRate": 0.065
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "WISCONSIN",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 12759,
+              "taxRate": 0.0354
+            },
+            {
+              "incomeMin": 12760,
+              "incomeMax": 25519,
+              "taxRate": 0.0465
+            },
+            {
+              "incomeMin": 25520,
+              "incomeMax": 280949,
+              "taxRate": 0.053
+            },
+            {
+              "incomeMin": 280950,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0765
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 17009,
+              "taxRate": 0.0354
+            },
+            {
+              "incomeMin": 17010,
+              "incomeMax": 34029,
+              "taxRate": 0.0465
+            },
+            {
+              "incomeMin": 34030,
+              "incomeMax": 374599,
+              "taxRate": 0.053
+            },
+            {
+              "incomeMin": 374600,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0765
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateName": "WYOMING",
+      "filingStatus": [
+        {
+          "status": "SINGLE",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0
+            }
+          ]
+        },
+        {
+          "status": "MARRIED FILING JOINTLY",
+          "incomeBrackets": [
+            {
+              "incomeMin": 0,
+              "incomeMax": 10000000000,
+              "taxRate": 0.0
             }
           ]
         }
