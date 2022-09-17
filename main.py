@@ -25,7 +25,7 @@ while disclaimer < 1:
     disclaimer += 1
 
 prompt = 0
-while prompt <= 1:
+while prompt < 1:
     # Main menu function
 
     print("""
@@ -808,4 +808,4 @@ while prompt <= 1:
         prompt += 1
 
     else:
-        print("Error: menuSelect")
+        print("Error: Enter a correct selection from the menu (i.e. 7)")
